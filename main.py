@@ -7,7 +7,7 @@ st.title("Make your query")
 public_url = st.text_input("Enter the given URL:")
 k = st.number_input("Enter the value of k:", value=10)
 temperature = st.number_input("Enter the temperature:", value=0.50, min_value=0.0, max_value=1.0, step=0.01)
-user_query = st.text_area("Enter your query:")
+user_query = st.text_area("Enter your query:","summarize what EDA is. Tell me the reference (eg: which chapter)")
 
 # Set parameters button
 if st.button("Set Parameters"):
