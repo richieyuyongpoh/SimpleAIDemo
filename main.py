@@ -19,13 +19,7 @@ if st.button("Set Parameters"):
 
 user_query = st.text_area("Enter your query:","summarize what EDA is. Tell me the reference (eg: which chapter)")
 
-# Set parameters button
-if st.button("Set Parameters"):
-    response = requests.post(f"{public_url}/set-parameters", json={
-        "temperature": temperature,
-        "k": k
-    })
-    st.json(response.json())
+
 
 # Query button
 if st.button("Send Query"):
